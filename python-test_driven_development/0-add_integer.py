@@ -3,9 +3,7 @@
 Module for add_integer function.
 Provides a function that adds two integers.
 """
-
-
-def add_integer(a, b=98):
+DEf add_integer(a, b=98):
     """
     Add two integers or floats and return the result as an integer.
 
