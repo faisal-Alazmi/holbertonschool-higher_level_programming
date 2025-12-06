@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """
 Module for add_integer function.
 This module provides a simple function to add two integers.
 """
-
 
 def add_integer(a, b=98):
     if ((not isinstance(a, int) and not isinstance(a, float))):
