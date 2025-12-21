@@ -13,8 +13,8 @@ class Student:
 
     def to_json(self, attrs=None):
         """
-        Return the dictionary representation of the instance.
-        If attrs is a list of strings, only attributes in this list are returned.
+        Return the dictionary representation.
+        If attrs is a list, only selected attributes are returned.
         """
         if isinstance(attrs, list):
             result = {}
