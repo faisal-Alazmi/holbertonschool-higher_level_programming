@@ -1,16 +1,18 @@
 #!/usr/bin/python3
 """
-Contains the class definition of a City.
+Contains the class definition of a State.
 """
 
-from sqlalchemy import Column, Integer, String, ForeignKey
-from model_state import Base
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
 
 
-class City(Base):
-    """City class mapped to 'cities' table"""
+class State(Base):
+    """State class mapped to states table"""
 
-    __tablename__ = "cities"
+    __tablename__ = "states"
+
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
     name = Column(String(128), nullable=False)
-    state_id = Column(Integer, ForeignKey("states.id"), nullable=False)
